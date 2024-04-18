@@ -1,2 +1,10 @@
 # Medical-Multimedia-Task---Transparent-Tracking-of-Spermatozoa
-Open the README file for task descriptions.
+#Following Sub-Tasks is implemented for mediaEval'23 Workshop Paper
+
+1) Sperm detection and tracking : This task aims to automatically localize and track all sperm cells in a given video. In order to develop medical applications in the real world, this task focuses on both the prediction accuracy and efficiency (i.e., processing time) of proposed solutions. Particularly, for a given video of microscopic sperm examinations in which sperms are manually annotated by experts, participants are required to detect sperm cells on all video frames and track them. Tracking should be performed by predicting bounding box coordinates with the similar format to the bounding box coordinates provided with the development datasets.
+
+2) Efficient detection and tracking: This task is very similar to Task 1 but has a larger focus on the efficiency of the system and not just the final predictions. Therefore, frames per second is an important factor to measure. To evaluate the efficiency of solutions, participants also need to report FPS and FLOPS of batch size of 1 during the inference state. To achieve the goal, participants expectedly develop methods with high prediction accuracy and fast inference times.
+
+3) Prediction of motility: in terms of the percentage of progressive and non-progressive spermatozoa is the second task. The prediction needs to be performed sample wise resulting in one value per sample per predicted attribute. Sperm tracking or bounding boxes predicted in task 1 are required to use to solve the task. Motility is the ability of an organism to move independently, and where a progressive spermatozoon is able to “move forward”, a non-progressive would move in circles without any forward progression.
+
+4) (Experimental) Predicting motility using graph data structures: We provide graph data extracted from the original VISEM-Tracking dataset. In this task, we ask participants to use these graph data structures as input to a model to predict motility level of sperm samples.
